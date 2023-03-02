@@ -1,0 +1,338 @@
+@media screen and (max-height: 870px) {
+  body main section.index {
+    padding-top: 5vh;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  body main section.index {
+    padding: 0;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  body main section.page_error {
+    padding-top: 10vh;
+  }
+}
+
+@media screen and (max-height: 470px) {
+  body main section.page_error {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  body main section.feedback {
+    padding-top: 5vh;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  body main section.feedback {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  body main section.page_error {
+    padding-bottom: 30px;
+
+    .wrapper {
+      margin: auto 0;
+
+      .page_error_message {
+        position: unset;
+        transform: unset;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    header {
+      height: unset;
+
+      .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 'pos1 pos2' 'pos3 pos3';
+
+        .logo {
+          grid-area: pos1;
+        }
+
+        .links {
+          grid-area: pos2;
+        }
+
+        .switcher {
+          grid-area: pos3;
+          padding-bottom: 15px;
+        }
+      }
+    }
+
+    .agreements {
+      .wrapper {
+        .inline_grid {
+          display: grid;
+          grid-template-columns: auto;
+
+          .text {
+            p {
+              text-align: justify;
+            }
+          }
+
+          .btn {
+            margin: auto;
+
+            input[type=button] {
+              width: unset;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  body {
+    main {
+      section.index {
+        .wrapper {
+          h1.h1-page-title {
+            font-size: 50px;
+          }
+
+          h2.h2-method-desc {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    main {
+      section.index {
+        .wrapper {
+          h1.h1-page-title {
+            font-size: 45px;
+          }
+
+          h2.h2-method-desc {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    #ascii-share-dialog {
+      width: 350px;
+
+      h3 {
+        max-width: 220px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    main {
+      section.index {
+        .wrapper {
+          .ascii-image-output {
+            .options_container {
+              .options_grid {
+                grid-column-gap: unset;
+              }
+            }
+          }
+        }
+      }
+
+      section.about, section.policy_cookie, section.policy_privacy {
+        .wrapper {
+          background-color: white;
+          border: 2px dashed #242424;
+          border-right: 0;
+          border-left: 0;
+
+          .text-window {
+            padding: 20px 0;
+            border-radius: 0;
+            border: 0;
+          }
+        }
+      }
+
+      section.feedback {
+        padding: 20px 0;
+
+        .wrapper {
+          background-color: white;
+          border: 2px dashed #242424;
+          border-right: 0;
+          border-left: 0;
+
+          form.feedback-form {
+            padding: 20px 0;
+            border-radius: 0;
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    #borders-dashed {
+      .header_and_main_together {
+        header {
+          .mobile-menu-btn {
+            display: unset;
+          }
+
+          .mobile-menu {
+            display: flex;
+          }
+
+          .wrapper {
+            grid-template-columns: unset;
+            grid-template-areas: 'a' 'b';
+            grid-template-rows: repeat(2, auto);
+
+            .logo {
+              grid-area: a;
+              margin: 9px auto;
+
+              a {
+                display: block;
+                font-size: 8vw;
+              }
+            }
+
+            .links {
+              display: none;
+            }
+
+            .switcher {
+              width: 100%;
+              grid-area: b;
+              padding: 10px 0;
+            }
+          }
+        }
+
+        main {
+          section.index {
+            .wrapper {
+              h1.h1-page-title {
+                display: none;
+              }
+
+              h2.h2-method-desc {
+                font-size: 22px;
+                padding-top: 15px;
+              }
+
+              .ascii-image-output {
+                .options_container {
+                  .options_grid {
+                    grid-template-columns: repeat(3, auto);
+                    grid-column-gap: 15px;
+                  }
+                }
+              }
+            }
+          }
+
+          section.feedback {
+            .wrapper {
+              form.feedback-form {
+                min-width: unset;
+
+                textarea, input[type=email] {
+                  width: 100%;
+                  max-width: unset;
+                  text-align: left;
+                }
+
+                .feedback-agreement {
+                  #id_agreement {
+                    left: 0;
+                    transform: translateX(29px);
+
+                    & + label {
+                      max-width: unset;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      footer {
+        height: unset;
+        padding-bottom: 21px;
+
+        .wrapper {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-areas: 'a b';
+
+          .policy {
+            display: none;
+          }
+
+          .GitHub {
+            text-align: left;
+            grid-area: a;
+            margin: auto 0;
+          }
+
+          .language-switcher {
+            grid-area: b;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    #ascii-share-dialog {
+      width: 300px;
+
+      h3 {
+        max-width: 170px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    .wrapper {
+      .switcher {
+        display: inline-flex;
+        justify-content: space-between;
+        grid-column-gap: 10px;
+      }
+    }
+  }
+}
